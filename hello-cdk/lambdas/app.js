@@ -1,3 +1,4 @@
 exports.handler = async (event, context) => {
-  return "Hello Lambda!";
+  const message = process.env.MESSAGE;
+  return `Hello Lambda! Env: ${message}`;
 };

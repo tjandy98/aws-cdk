@@ -17,7 +17,6 @@ Populate AWS environment with resources
 
 ```
 cdk bootstrap
-
 ```
 
 Generate CloudFormation template
@@ -30,4 +29,13 @@ Deploy
 
 ```
 cdk deploy
+
+// deploy changes instead of entire project
+cdk deploy --hotswap
+```
+
+Cleanup
+
+```
+cdk destroy
 ```
